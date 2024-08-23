@@ -53,14 +53,14 @@ async def account_login(bot: Client, m: Message):
                     [
                     InlineKeyboardButton("🦋 Coding Channel 🦋" ,url="https://t.me/SB_CODERZZ") ]                               
             ]))
-@bot.on_message(filters.command("stop"))
+@bot.on_message(filters.command("stop1"))
 async def restart_handler(_, m):
     await m.reply_text("♦ 𝐒𝐭𝐨𝐩𝐩𝐞𝐭 ♦", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
 
-@bot.on_message(filters.command(["upload"]))
+@bot.on_message(filters.command(["upload1"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('sᴇɴᴅ ᴍᴇ .ᴛxᴛ ғɪʟᴇ  ⏍')
     input: Message = await bot.listen(editable.chat.id)
